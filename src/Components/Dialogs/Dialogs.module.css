@@ -1,0 +1,14 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    width: 100%;
+    max-width: 750px;
+    margin-left: 50px;
+    background-color: peru;
+}
+.dialogs_items{
+    padding:10px;
+}
+.messages {
+    padding: 10px;
+}
