@@ -1,0 +1,13 @@
+.header {
+    width: 100%;
+    max-width: 1000px;
+    color: antiquewhite;
+    height: 90px;
+    background-color: cadetblue;
+    margin: 20px 0px;
+
+    &__img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+}

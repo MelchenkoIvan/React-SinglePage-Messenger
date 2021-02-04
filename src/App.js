@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css';
+import A from './Style/CSS/App.module.css';
 import Header from './Components/Header';
 import Navbar from './Components/Navbar';
 import Profile from './Components/Profile';
@@ -7,11 +7,11 @@ import Profile from './Components/Profile';
 
 const App = () => {
     return (
-        <div className="app-wrapper">
+        <div className={A.app}>
             <Header/>
-            <div className="containier">
+            <div className={A.containier}>
                 <Navbar />
-                <Profile/>
+                <Profile/> 
             </div>
         </div>
   );
