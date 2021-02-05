@@ -3,27 +3,28 @@ import M from './MyPosts.module.css';
 import Post from './Post/Post';
 
 const MyPosts = () => {
+    let postsData = [
+        { id: 1, text: 'Hi, how are you?' },
+        { id: 2, text: 'It is my post' },
+        { id: 3, text: 'I am a dracula' },
+        { id: 4, text: 'Yo' },
+        { id: 5, text: 'No , I am a drakula' },
+    ]
+   
+    
+    let postsElements = postsData.map(post => <Post message={post.text} />);
     return (
-        <div>
-            <div className={M.MainPost}>
-                <img id={M.img} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsJ774VL7RjYJGKgiFM2E1DmvLT3NeldlBWA&usqp=CAU" />
-                <div className={M.data}>
-                    <h3>Dmitry K.</h3>
-                    <p>
-                        Date of Birth:2january<br />
-                                City: Minsk<br />
-                                Edication:BSU'11<br />
-                                Web Site:adsdasdad<br />
-                    </p>
-                </div>
-            </div>
+        <div className={M.posts}>
+            <h3 className={ M.titlePosts}>My Posts</h3>
             <div>
                 <textarea></textarea>
-                <button>Add post</button>
+                <div>
+                    <button>Add post</button>
+                </div>
+                
             </div>
             <div className={M.posts}>
-                <Post message="Hi, how are you?"/>
-                <Post message="It is my post"/>
+                {postsElements}
             </div>
         </div>)
 }
