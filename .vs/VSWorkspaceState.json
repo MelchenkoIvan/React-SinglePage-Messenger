@@ -3,14 +3,11 @@
     "",
     "\\src",
     "\\src\\Components",
-    "\\src\\Components\\Dialogs",
-    "\\src\\Components\\Dialogs\\DialogItem",
-    "\\src\\Components\\Dialogs\\Message",
     "\\src\\Components\\Posts",
-    "\\src\\Components\\ProfileInfo",
-    "\\src\\Style",
+    "\\src\\Components\\Posts\\Post",
+    "\\src\\redux",
     "\\src\\Style\\CSS"
   ],
-  "SelectedNode": "\\src\\App.js",
+  "SelectedNode": "\\src\\Components\\Posts\\MyPosts.jsx",
   "PreviewInSolutionExplorer": false
 }
