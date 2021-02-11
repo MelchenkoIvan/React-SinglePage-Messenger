@@ -3,6 +3,8 @@
     "",
     "\\src",
     "\\src\\Components",
+    "\\src\\Components\\Navbar",
+    "\\src\\Components\\Navbar\\Friend",
     "\\src\\Components\\Posts",
     "\\src\\Components\\Posts\\Post",
     "\\src\\redux",

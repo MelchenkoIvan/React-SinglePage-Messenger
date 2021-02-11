@@ -9,19 +9,19 @@ import Navbar from './Components/Navbar/Navbar';
 
 
 const App = (props) => {
-    
+   
     return (
         <BrowserRouter>
         <div className={A.app}>
             <Header />
                 <div className={A.containier}>
                     <Navbar state={props.state.sidebar} />
-                    <Route path="/profile" render={() => <Profile state={props.state.profilePage} />} />
+                    <Route path="/profile" render={() => <Profile profilePage={props.state.profilePage} addPost={props.addPost} updateNewPostText={ props.updateNewPostText} />} />
                     <Route path="/dialogs" render={() => <Dialogs state={props.state.dialogsPage}  />} />
                 
             </div>
             </div>
-        </BrowserRouter>
+        </BrowserRouter> 
   );
 }
 
