@@ -3,13 +3,10 @@
     "",
     "\\src",
     "\\src\\Components",
-    "\\src\\Components\\Navbar",
     "\\src\\Components\\Navbar\\Friend",
-    "\\src\\Components\\Posts",
     "\\src\\Components\\Posts\\Post",
-    "\\src\\redux",
-    "\\src\\Style\\CSS"
+    "\\src\\redux"
   ],
-  "SelectedNode": "\\src\\Components\\Posts\\MyPosts.jsx",
+  "SelectedNode": "\\src\\App.js",
   "PreviewInSolutionExplorer": false
 }
