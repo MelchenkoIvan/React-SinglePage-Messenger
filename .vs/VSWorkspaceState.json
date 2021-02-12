@@ -3,10 +3,8 @@
     "",
     "\\src",
     "\\src\\Components",
-    "\\src\\Components\\Navbar\\Friend",
-    "\\src\\Components\\Posts\\Post",
     "\\src\\redux"
   ],
-  "SelectedNode": "\\src\\App.js",
+  "SelectedNode": "\\public",
   "PreviewInSolutionExplorer": false
 }
