@@ -4,7 +4,7 @@ import sidebarReducer from "./sidebar-reducer";
 
 
 let store = {
-    _state:{
+    _state: {
         profilePage: {
             postsData: [
                 { id: 1, text: 'Hi, how are you?', countLike: 23 },
@@ -32,7 +32,7 @@ let store = {
                 { id: 5, text: 'no , I am a drakula' }
             ],
             newMessageBody: "sd"
-            
+
         },
         sidebar: {
             friendData: [
@@ -51,15 +51,15 @@ let store = {
         return this._state;
     },
 
-    _callSubscribier ()  {
+    _callSubscribier() {
 
     },
     subscribe(observer) {
         this._callSubscribier = observer;
     },
 
-    
-    
+
+
     dispatch(action) {
 
         this._state.profilePage = profileReducer(this._state.profilePage, action);
@@ -68,9 +68,9 @@ let store = {
 
         this._state.sidebar = sidebarReducer(this._state.sidebar, action);
         this._callSubscribier(this._state);
-        
+
     }
-   
+
 
 }
 

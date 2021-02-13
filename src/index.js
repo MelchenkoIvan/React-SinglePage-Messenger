@@ -1,10 +1,11 @@
 import React from 'react'
 import './index.css';
-import store from './redux/state';
 import ReactDOM from "react-dom";
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import store from './redux/redux-store';
+
 
 let rerenderEntityTree = (state) => {
     
@@ -18,7 +19,9 @@ let rerenderEntityTree = (state) => {
 
 }
 rerenderEntityTree(store.getState());
-store.subscribe(rerenderEntityTree);
+store.subscribe(() =>{
+    rerenderEntityTree(store.getState());
+});
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
