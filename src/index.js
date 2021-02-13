@@ -8,7 +8,7 @@ import store from './redux/redux-store';
 import {Provider} from 'react-redux'
 
 
-let rerenderEntityTree = (state) => {
+
 
     ReactDOM.render(
         <BrowserRouter>
@@ -19,11 +19,7 @@ let rerenderEntityTree = (state) => {
         document.getElementById('root')
     );
 
-}
-rerenderEntityTree(store.getState());
-store.subscribe(() => {
-    rerenderEntityTree(store.getState());
-});
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
