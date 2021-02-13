@@ -5,20 +5,23 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import store from './redux/redux-store';
+import  { Provider } from './StoreContext';
 
 
 let rerenderEntityTree = (state) => {
-    
+
     ReactDOM.render(
         <BrowserRouter>
-            <App store = {store}/>
+            <Provider store={store}>
+                <App />
+            </Provider>
         </BrowserRouter>,
         document.getElementById('root')
     );
 
 }
 rerenderEntityTree(store.getState());
-store.subscribe(() =>{
+store.subscribe(() => {
     rerenderEntityTree(store.getState());
 });
 
