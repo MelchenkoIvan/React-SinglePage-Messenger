@@ -23,6 +23,7 @@ let initialState ={
 
 const dialogsReducer = (state = initialState , action) => {
 
+
     switch (action.type) {
 
         case UpdateNewMessageBody:{
@@ -31,12 +32,14 @@ const dialogsReducer = (state = initialState , action) => {
             return stateCopy;
         }
         case Send_Message:{
-            let stateCopy = {...state}
-            stateCopy.messagesData = [...state.messagesData]
             let body = state.newMessageBody;
-            stateCopy.newMessageBody = '';
-            stateCopy.messagesData.push({ id: 6, text: body });
-            return stateCopy;
+            return {
+                ...state,
+                newMessageBody:'',
+                messagesData:[...state.messagesData,{ id: 6, text: body }]
+            }
+            
+            
         }
         default:
             return state;
