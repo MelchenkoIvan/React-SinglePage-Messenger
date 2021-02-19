@@ -9,7 +9,7 @@ const Post = (props) => {
             <div className={M.like}>
                 {props.countLike}
             </div>
-            
+
         </div>)
 }
 export default Post;
