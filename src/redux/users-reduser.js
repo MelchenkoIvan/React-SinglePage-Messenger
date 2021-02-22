@@ -58,6 +58,6 @@ export const Unfollow = (userId) => ({ type: unfollow, userId })
 export const SetUsers = (users) => ({ type: set_users, users })
 export const SetCurrentPage = (currentPage) => ({ type: setCurrentPage, currentPage })
 export const SetUsersTotalCount = (totalCount) => ({ type: setTotalCount, totalCount })
-export const ToggleisFetching = (isFetching ) => ({ type: toggle_is_fetching, isFetching })
+export const ToggleisFetching = (isFetching) => ({ type: toggle_is_fetching, isFetching })
 
 export default usersReducer;
