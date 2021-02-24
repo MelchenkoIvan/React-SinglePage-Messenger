@@ -31,6 +31,9 @@
 .selectedPage{
     font-weight: bold;
 }
+.NotSelectedPage{
+    font-weight: normal;
+}
 .preloader{
     width: 30px;
     height: 30px;

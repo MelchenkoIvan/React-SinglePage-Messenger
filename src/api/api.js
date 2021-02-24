@@ -22,13 +22,17 @@ export const usersApi = {
     },
     followOnUser(id){
         return inctance.post(`follow/${id}`)
+    },
+    getProfile(userId){
+        return inctance.get(`profile/${userId}`);
+        
     }
 }
 
 export const authApi = {
     
-    getAuth() {
-        return inctance.get(`me`).then(response => response)
+    me() {
+        return inctance.get(`auth/me`);
     }
 }
 export const profileApi = {
