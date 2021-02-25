@@ -8,7 +8,7 @@ const inctance = axios.create({
     withCredentials: true,
     baseURL: "https://social-network.samuraijs.com/api/1.0/",
     headers: {
-        "API-KEY": maxKey
+        "API-KEY": IvanKey
     }
 });
 
@@ -24,27 +24,29 @@ export const usersApi = {
         return inctance.post(`follow/${id}`)
     },
     getProfile(userId){
+        return profileApi.getProfile(userId);
+    }
+}
+export const profileApi = {
+    getProfile(userId){
         return inctance.get(`profile/${userId}`);
+    },
+    getStatus(userId){
+        return inctance.get(`profile/status/${userId}`);
+    },
+    updateStatus(status){
+        return inctance.put(`profile/status`,{status: status});
         
     }
 }
-
 export const authApi = {
     
     me() {
         return inctance.get(`auth/me`);
     }
 }
-export const profileApi = {
-    getUser(currentPage, pageSize) {
-        return inctance.get(`users?page=${currentPage}&count=${pageSize}`).then(response => response.data)
-    }
-}
-export const followApi = {
-    getUser(currentPage, pageSize) {
-        return inctance.get(`users?page=${currentPage}&count=${pageSize}`).then(response => response.data)
-    }
-}
+
+
 
 
 
