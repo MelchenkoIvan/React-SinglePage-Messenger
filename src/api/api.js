@@ -39,12 +39,20 @@ export const profileApi = {
         
     }
 }
+
 export const authApi = {
     
     me() {
         return inctance.get(`auth/me`);
-    }
+    },
+    login(email,password,rememberMe = false) {
+        return inctance.post(`auth/login`,{email,password,rememberMe});
+    },
+    logout() {
+        return inctance.delete(`auth/login`);
+    },
 }
+
 
 
 
