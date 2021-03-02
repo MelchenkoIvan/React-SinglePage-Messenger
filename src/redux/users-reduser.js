@@ -73,7 +73,7 @@ export const SetUsersTotalCount = (totalCount) => ({ type: setTotalCount, totalC
 export const ToggleisFetching = (isFetching) => ({ type: toggle_is_fetching, isFetching })
 export const ToggleFollowingProgress = (isFetching, userId) => ({ type: toggle_is_following_Progress, isFetching, userId })
 
-export const getUsers = (currentPage, pageSize) => { // ThunkCreator
+export const requestUsers = (currentPage, pageSize) => { // ThunkCreator
     return (dispatch) => {
         dispatch(ToggleisFetching(true));
         dispatch(SetCurrentPage(currentPage));
