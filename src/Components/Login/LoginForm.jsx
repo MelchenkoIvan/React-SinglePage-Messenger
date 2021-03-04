@@ -5,10 +5,10 @@ import { Input } from '../Common/FormsControls/FormsControls';
 import style from '../Common/FormsControls/FormsControls.module.css'
 
 
-const LoginForm = (props) => {
+const LoginForm = ({handleSubmit,error}) => {
     
     return(
-        <form onSubmit={props.handleSubmit}>
+        <form onSubmit={handleSubmit}>
                 <div >
                     <Field placeholder={"Emeil"} name={"emeil"} validate= {[requiredField]}  component={Input}/>
                 </div>
@@ -18,8 +18,8 @@ const LoginForm = (props) => {
                 <div>
                     <Field type={"checkbox"} name={"remember_me"}  component={Input}/> remember me
                 </div>
-                {props.error && <div className={style.formSummaryError}>
-                    {props.error}
+                {error && <div className={style.formSummaryError}>
+                    {error}
                 </div>}
                 <div >
                     <button>Login</button>

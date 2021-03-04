@@ -2,19 +2,19 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { reduxForm } from 'redux-form'
 import LoginForm from './LoginForm'
-import { login, logout } from '../../redux/auth-reduser'
+import { login } from '../../redux/auth-reduser'
 import { Redirect } from 'react-router-dom'
 
 //форма редакс помогает в оброботке форм
 const LoginReduxForm = reduxForm({ form: 'login' })(LoginForm)
 
-const Login = (props) => {
+const Login = ({login,isAuth}) => {
 
     const onSubmit = (formData) => {
 
-        props.login(formData.emeil, formData.password, formData.remember_me)
+        login(formData.emeil, formData.password, formData.remember_me)
     }
-    if(props.isAuth){
+    if(isAuth){
         return<Redirect to={"/profile"}/>
     }
 

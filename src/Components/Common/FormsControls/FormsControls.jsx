@@ -5,13 +5,13 @@ import styles from './FormsControls.module.css'
 
 // Деструктуризация достаём те объекты которые нужно с помощью рест оператора ({}), 
 // а спомощью spread оператора ... оставляем остальные в пропсах
-const FormControl = ({input, meta,child, ...props}) => {
+const FormControl = ({input, meta,children}) => {
 
     const hasError = meta.touched && meta.error;
     
     return(
         <div className={styles.formControl +" "+ (hasError ? styles.error : "")}>
-            <div>{props.children}</div>
+            <div>{children}</div>
             {hasError && <span>{meta.error}</span>}
         </div>
     )

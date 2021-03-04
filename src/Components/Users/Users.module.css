@@ -1,42 +1,35 @@
-.usersPhoto{
-    width: 40px;
-    height: 40px;
-    border-radius: 10rem;
+.usersPhoto {
+  width: 40px;
+  height: 40px;
+  border-radius: 10rem;
 }
-.container{
-    display: flex;
-    width: 100%;
-    min-width: 600px;
-    padding-left: 30px;
+.container {
+  display: flex;
+  width: 100%;
+  min-width: 600px;
+  padding-left: 30px;
 }
-.informAboutuser{
-    display: flex;
-    border: 0.1rem  solid green ;
-    margin: 10px 0 0 10px;
-    border-radius: 1rem;
-    width: 100%;
-    max-width: 400px;
+.informAboutuser {
+  display: flex;
+  border: 0.1rem solid green;
+  margin: 10px 0 0 10px;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 400px;
 }
-.location{
-    margin-left: 200px;
+.location {
+  margin-left: 200px;
 }
-.NameStatus{
-    margin-left: 40px;
+.NameStatus {
+  margin-left: 40px;
 }
-.button{
-    width: 70px;
-    height: 20px;
-    border-radius: 0.5rem;
+.button {
+  width: 70px;
+  height: 20px;
+  border-radius: 0.5rem;
 }
-.selectedPage{
-    font-weight: bold;
-}
-.NotSelectedPage{
-    font-weight: normal;
-}
-.preloader{
-    width: 30px;
-    height: 30px;
-    
 
+.preloader {
+  width: 30px;
+  height: 30px;
 }

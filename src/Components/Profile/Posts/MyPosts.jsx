@@ -12,7 +12,6 @@ const MyPosts = React.memo(props => {
     // shouldComponentUpdate(nextProps, nextState){
     //     return nextProps != this.props || nextState != this.state;
     // }
-
     //можем использовать memo если не хотим класовую компоненту
     let postsElements =
         props.post.map(post => <Post message={post.text} countLike={post.countLike} />);
