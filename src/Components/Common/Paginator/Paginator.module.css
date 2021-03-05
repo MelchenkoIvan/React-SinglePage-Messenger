@@ -1,6 +1,15 @@
-.selectedPage {
-  font-weight: bold;
-}
+
 .NotSelectedPage {
   font-weight: normal;
+}
+.paginator {
+  margin: 10px;
+}
+#pageNumber {
+  padding: 2px;
+  border: 1px solid gray;
+}
+.selectedPage {
+  font-weight: bold;
+  border-color: black;
 }
