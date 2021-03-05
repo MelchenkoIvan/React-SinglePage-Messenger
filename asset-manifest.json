@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/React-SinglePage-Messenger/static/css/main.390f2425.chunk.css",
+    "main.js": "/React-SinglePage-Messenger/static/js/main.bc8fe9cb.chunk.js",
+    "main.js.map": "/React-SinglePage-Messenger/static/js/main.bc8fe9cb.chunk.js.map",
+    "runtime-main.js": "/React-SinglePage-Messenger/static/js/runtime-main.c42eff14.js",
+    "runtime-main.js.map": "/React-SinglePage-Messenger/static/js/runtime-main.c42eff14.js.map",
+    "static/js/2.b0dec1f3.chunk.js": "/React-SinglePage-Messenger/static/js/2.b0dec1f3.chunk.js",
+    "static/js/2.b0dec1f3.chunk.js.map": "/React-SinglePage-Messenger/static/js/2.b0dec1f3.chunk.js.map",
+    "static/js/3.ee50e69b.chunk.js": "/React-SinglePage-Messenger/static/js/3.ee50e69b.chunk.js",
+    "static/js/3.ee50e69b.chunk.js.map": "/React-SinglePage-Messenger/static/js/3.ee50e69b.chunk.js.map",
+    "index.html": "/React-SinglePage-Messenger/index.html",
+    "static/css/main.390f2425.chunk.css.map": "/React-SinglePage-Messenger/static/css/main.390f2425.chunk.css.map",
+    "static/js/2.b0dec1f3.chunk.js.LICENSE.txt": "/React-SinglePage-Messenger/static/js/2.b0dec1f3.chunk.js.LICENSE.txt",
+    "static/media/Spinner.cb81a334.svg": "/React-SinglePage-Messenger/static/media/Spinner.cb81a334.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c42eff14.js",
+    "static/js/2.b0dec1f3.chunk.js",
+    "static/css/main.390f2425.chunk.css",
+    "static/js/main.bc8fe9cb.chunk.js"
+  ]
+}
