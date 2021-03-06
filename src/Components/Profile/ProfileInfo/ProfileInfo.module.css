@@ -10,7 +10,9 @@
     width: 100%;
 }
 
-
+.mainPhoto{
+    max-width: 200px;
+}
 .data {
     margin-left: 80px;
 }

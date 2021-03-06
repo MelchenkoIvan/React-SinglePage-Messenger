@@ -17,36 +17,45 @@ export const usersApi = {
     getUser(currentPage, pageSize) {
         return inctance.get(`users?page=${currentPage}&count=${pageSize}`).then(response => response.data)
     },
-    unfollowOnUser(id){
+    unfollowOnUser(id) {
         return inctance.delete(`follow/${id}`)
     },
-    followOnUser(id){
+    followOnUser(id) {
         return inctance.post(`follow/${id}`)
     },
-    getProfile(userId){
+    getProfile(userId) {
         return profileApi.getProfile(userId);
     }
 }
 export const profileApi = {
-    getProfile(userId){
+    getProfile(userId) {
         return inctance.get(`profile/${userId}`);
     },
-    getStatus(userId){
+    getStatus(userId) {
         return inctance.get(`profile/status/${userId}`);
     },
-    updateStatus(status){
-        return inctance.put(`profile/status`,{status: status});
-        
+    updateStatus(status) {
+        return inctance.put(`profile/status`, { status: status });
+
+    },
+    savePhoto(photoFile) {
+        const formData = new FormData();
+        formData.append("image", photoFile)
+        return inctance.put(`profile/photo`, formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
+        });
     }
 }
 
 export const authApi = {
-    
+
     me() {
         return inctance.get(`auth/me`);
     },
-    login(email,password,rememberMe = false) {
-        return inctance.post(`auth/login`,{email,password,rememberMe});
+    login(email, password, rememberMe = false) {
+        return inctance.post(`auth/login`, { email, password, rememberMe });
     },
     logout() {
         return inctance.delete(`auth/login`);
